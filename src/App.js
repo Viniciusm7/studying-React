@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import Item from "./components/item/item";
+import Card from "./components/card/card";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  return(
+     <> 
+     {/*  Tag vazia aceita todas as outras dentro dela.*/} 
+    <h1>Minha primeira aplicação com React</h1>
+    {/* A tag 'Item' renderiza todo o button em components */}
+    <ul>
+      <Item>item 1</Item>
+      <Item>item 2</Item>
+      <Item>item 3</Item>
+    </ul>
+      
+      <Card />
+    </>
+    )};
+
 
 export default App;
